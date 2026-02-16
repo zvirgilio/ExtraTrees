@@ -24,7 +24,7 @@ To the best of my ability, I recreated the algorithm for classification as outli
 
 ## Usage
 ### 0. Requirements
-This requires 'numpy' to run 'trees.py', and both 'numpy' and 'scikit-learn' for 'iris_test.py'
+This requires `numpy` to run `trees.py`, and both `numpy` and `scikit-learn` for `iris_test.py`
 
 ### 1. Toy Dataset (`trees.py`)
 When run as main, `trees.py` tests an individual tree and a forest on a generated toy dataset.
@@ -35,4 +35,4 @@ When run as main, `trees.py` tests an individual tree and a forest on a generate
 > **Note on Performance:** Predictably, the error rate is high if `k` (the number of features included) is 2. Since the ideal first split is to split the dataset in half based on whether x (or y) is positive or negative, but the data is randomly distributed, this split does not decrease the entropy at all. A more extreme split will do better as the initial feature but leads to worse overall performance.
 
 ### 2. Iris Dataset (`iris_test.py`)
-Running `iris_test.py` as main tests the accuracy of the algorithm on the standard Iris classification toy dataset using an 80-20 training-test split.
+Running `iris_test.py` as main tests the accuracy of the algorithm on the standard Iris classification toy dataset using an 80-20 training-test split. The current parameters in the forest predict 29/30 of the test cases correctly.
